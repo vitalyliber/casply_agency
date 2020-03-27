@@ -1,8 +1,0 @@
-{
-  "name": "casply_agency",
-  "scripts": {
-    "dokku": {
-      "predeploy": "next export"
-    }
-  }
-}
