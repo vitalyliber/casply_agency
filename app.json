@@ -2,7 +2,7 @@
   "name": "casply_agency",
   "scripts": {
     "dokku": {
-      "postdeploy": "next export"
+      "predeploy": "next export"
     }
   }
 }
