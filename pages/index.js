@@ -1,47 +1,48 @@
-import Head from 'next/head'
+import Head from "next/head";
+
+const description = "Application development Casply Agency";
 
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
+      <title>Casply Agency</title>
+      <meta name="description" content={description} />
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main>
       <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <agencyName>Casply</agencyName> Agency
       </h1>
 
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
+      <p className="description">Create your next application with us</p>
 
       <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
+        <a href="/#" className="card">
+          <h3>Web</h3>
+          <p>We use React for creating the best user experience.</p>
         </a>
 
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
+        <a href="/#" className="card">
+          <h3>Mobile</h3>
+          <p>We prefer React Native for a speed of development.</p>
         </a>
 
         <a
-          href="https://zeit.co/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="/#"
           className="card"
         >
-          <h3>Deploy &rarr;</h3>
+          <h3>API</h3>
+          <p>We choose Ruby on Rails for fast growing startups.</p>
+        </a>
+
+        <a
+          href="/#"
+          className="card"
+        >
+          <h3>DevOps</h3>
           <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
+            We build, run, and operate applications apps with Dokku.
           </p>
         </a>
       </div>
@@ -49,11 +50,10 @@ const Home = () => (
 
     <footer>
       <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
+        href="/#"
         rel="noopener noreferrer"
       >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
+        Casply Agency <img src="/casply_agency.svg" alt="Casply Logo" />
       </a>
     </footer>
 
@@ -135,6 +135,10 @@ const Home = () => (
         font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
           DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
       }
+      
+      agencyName {
+        color: crimson;
+      }
 
       .grid {
         display: flex;
@@ -198,6 +202,6 @@ const Home = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
