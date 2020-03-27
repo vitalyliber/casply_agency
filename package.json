@@ -5,11 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "static": "next export",
+    "deploy": "git push dokku@casply.com:casply master"
   },
   "dependencies": {
     "next": "9.3.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "prettier": "2.0.2"
   }
 }
