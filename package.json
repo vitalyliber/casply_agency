@@ -10,9 +10,11 @@
     "deploy": "git push dokku@casply.com:casply master"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "next": "9.3.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "sass": "^1.26.3"
   },
   "devDependencies": {
     "prettier": "2.0.2"
