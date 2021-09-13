@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start -p 5000",
     "static": "next export",
-    "deploy": "git push dokku@casply.com:casply master"
+    "deploy": "git push dokku@116.203.209.110:casply master"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
